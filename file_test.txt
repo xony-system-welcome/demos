@@ -1,6 +1,9 @@
 sudo apt-get install sysv-rc-conf
+sleep 10
 sudo sysv-rc-conf
+sleep 10
 sudo yum update
+sleep 10
 sudo yum install net-tools -y
 echo 0 >/proc/sys/net/ipv4/icmp_echo_ignore_all
 sudo yum -y install openssh-server openssh-clients
