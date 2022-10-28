@@ -1,22 +1,21 @@
-sudo apt-get install sysv-rc-conf
+
+sudo yum install sysv-rc-conf
 sleep 10
+
 sudo sysv-rc-conf
 sleep 10
+
 sudo yum update
 sleep 10
+
 sudo yum install net-tools -y
+sleep 10
+
 echo 0 >/proc/sys/net/ipv4/icmp_echo_ignore_all
+sleep 10
+
 sudo yum -y install openssh-server openssh-clients
+sleep 10
+
 sudo systemctl start sshd
-curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
-sudo yum install -y yum-utils \
-  device-mapper-persistent-data \
-  lvm2
- sudo yum-config-manager \
-    --add-repo \
-    https://download.docker.com/linux/centos/docker-ce.repo
-sudo yum install docker-ce docker-ce-cli containerd.io docker-compose-plugin
-yum list docker-ce --showduplicates | sort -r
-sudo yum install docker-ce.x86_64 docker-ce-cli-18.06.3.ce-3.el7 containerd.io
-sudo systemctl start docker
-sudo docker run hello-world
+sleep 10
