@@ -47,6 +47,11 @@ At this stage of setting up the Docker PostgreSQL Environment, your PostgreSQL i
 
 To download PGADmin, perform these steps: <br>
 
-* Visit Docker Hub and search for PgAdmin. You can find various Docker Images to run PGAdmin. Select the appropriate one and copy the Docker pull command (Follow this link to get the “Docker pull” command, which pulls the PGAdmin4 version. You can also get the respective PGAdmin versions according to your preferences). <br>
+* Visit Docker Hub and search for PgAdmin. You can find various Docker Images to run PGAdmin. Select the appropriate one and copy the Docker pull command (Follow this link **https://hub.docker.com/r/dpage/pgadmin4** to get the “Docker pull” command, which pulls the PGAdmin4 version. You can also get the respective PGAdmin versions according to your preferences). <br>
 * Execute the pull command to start PGAdmin.<br>
 ```docker pull dpage/pgadmin4:latest```
+
+* After downloading the image, run the container by executing the command given below.<br>
+```docker run --name my-pgadmin -p 82:80 -e 'PGADMIN_DEFAULT_EMAIL=user@domain.local' -e 'PGADMIN_DEFAULT_PASSWORD=postgresmaster'-d dpage/pgadmin4```
+
+In the above-given command, **my-pgadmin** is the name of the Docker PostgreSQL PGAdmin Container. **PGADMIN_DEFAULT_EMAIL** and **PGADMIN_DEFAULT_PASSWORD** are the username and password for the Docker PostgreSQL container, respectively.
