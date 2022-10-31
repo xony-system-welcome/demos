@@ -29,12 +29,15 @@ PostgreSQL is the name of the Docker Container.<br>
 * **-d** is the parameter that runs the Docker Container in the detached mode, i.e., in the background. If you accidentally close or terminate the Command Prompt, the Docker Container will still run in the background.<br>
 * **postgres** is the name of the Docker image that was previously downloaded to run the Docker Container.<br>
 
-Now, execute docker ps -a to check the status of the newly created PostgreSQL container. <br>
-* docker ps -a to check the status
-```
-* docker ps -a
-```
+Now, execute **docker ps -a** to check the status of the newly created PostgreSQL container. <br>
+docker ps -a to check the status
+```docker ps -a```
 
+* For starting the Docker Container:
+```docker start postgresqldb```
+
+* For stopping the Docker Container:
+```docker stop postgresqldb```
 
 
 
@@ -46,3 +49,4 @@ To download PGADmin, perform these steps: <br>
 
 * Visit Docker Hub and search for PgAdmin. You can find various Docker Images to run PGAdmin. Select the appropriate one and copy the Docker pull command (Follow this link to get the “Docker pull” command, which pulls the PGAdmin4 version. You can also get the respective PGAdmin versions according to your preferences). <br>
 * Execute the pull command to start PGAdmin.<br>
+```docker pull dpage/pgadmin4:latest```
