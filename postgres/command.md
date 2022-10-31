@@ -49,6 +49,7 @@ To download PGADmin, perform these steps: <br>
 
 * Visit Docker Hub and search for PgAdmin. You can find various Docker Images to run PGAdmin. Select the appropriate one and copy the Docker pull command (Follow this link **https://hub.docker.com/r/dpage/pgadmin4** to get the “Docker pull” command, which pulls the PGAdmin4 version. You can also get the respective PGAdmin versions according to your preferences). <br>
 * Execute the pull command to start PGAdmin.<br>
+>If error "Error response from daemon: Get "https://registry-1.docker.io/v2/": x509: certificate has expired or is not yet valid: current time " you need to set the NTP
 ```docker pull dpage/pgadmin4:latest```
 
 * After downloading the image, run the container by executing the command given below.<br>
