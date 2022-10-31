@@ -1,0 +1,24 @@
+### Take the Docker PostgreSQL image. Open a new command window, and run the command given below.
+'''
+docker pull postgres
+'''
+
+### To obtain the list of existing Docker Images, run the following command.
+'''
+docker images
+'''
+
+### In the next step, you can enter the command you copied from the Docker Hub in the Command Prompt.
+'''
+docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+'''
+
+### The above-given command should be customized and added with the necessary parameters to work properly for setting up PostgreSQL on Docker.
+'''
+docker run --name postgresql -e POSTGRES_USER=myusername -e POSTGRES_PASSWORD=mypassword -p 5432:5432 -v /data:/var/lib/postgresql/data -d postgres
+'''
+
+### 
+'''
+
+'''
