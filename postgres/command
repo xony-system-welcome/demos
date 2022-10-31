@@ -28,6 +28,10 @@ PostgreSQL is the name of the Docker Container.
 -v is the parameter that synchronizes the Postgres data with the local folder. This ensures that Postgres data will be safely present within the Home Directory even if the Docker Container is terminated.
 -d is the parameter that runs the Docker Container in the detached mode, i.e., in the background. If you accidentally close or terminate the Command Prompt, the Docker Container will still run in the background.
 postgres is the name of the Docker image that was previously downloaded to run the Docker Container.
-'''
 
+/n
+Now, execute docker ps -a to check the status of the newly created PostgreSQL container. /n
+docker ps -a to check the status
+'''
+docker ps -a
 '''
