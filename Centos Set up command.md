@@ -8,16 +8,15 @@ sudo nmap -sTU -O IP-address-Here
 ```
 
 ### Check and start Docker
-```
+
 **Start Docker service**
-sudo systemctl start docker**
-Check Docker start state**
-sudo docker run hello-world
+```sudo systemctl start docker```
+**Check Docker start state**
+```sudo docker run hello-world```
 **Check docker state**
-sudo docker ps
+```sudo docker ps```
 **Check all docker state**
-sudo docker ps -a
-```
+```sudo docker ps -a```
 
 ### SET UP
 sudo yum install sysv-rc-conf
