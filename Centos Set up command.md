@@ -1,3 +1,5 @@
+http://10.8.9.131:8085/ for website
+http://10.8.9.131:8085/
 ### Check port state
 ```sudo lsof -i -P -n | grep LISTEN```</br>
 ```sudo netstat -tulpn | grep LISTEN```</br>
@@ -14,6 +16,12 @@
 **Check docker state**</br>
 ```sudo docker ps```</br>
 **Check all docker state**</br>
+```sudo docker ps -a```</br>
+
+### Start Docker container
+```docker start demo_web_server```</br>
+```docker start postgresql```</br>
+```docker start my-pgadmin```</br>
 ```sudo docker ps -a```</br>
 
 ### SET UP
