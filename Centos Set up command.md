@@ -1,22 +1,20 @@
 ### Check port state
-```
-sudo lsof -i -P -n | grep LISTEN
-sudo netstat -tulpn | grep LISTEN
-sudo ss -tulpn | grep LISTEN
-sudo lsof -i:22 ## see a specific port such as 22 ##
-sudo nmap -sTU -O IP-address-Here
-```
+```sudo lsof -i -P -n | grep LISTEN```</br>
+```sudo netstat -tulpn | grep LISTEN```</br>
+```sudo ss -tulpn | grep LISTEN```</br>
+```sudo lsof -i:22 ## see a specific port such as 22 ##```</br>
+```sudo nmap -sTU -O IP-address-Here```</br>
 
 ### Check and start Docker
 
 **Start Docker service**</br>
-```sudo systemctl start docker```
-**Check Docker start state**<\br>
-```sudo docker run hello-world```
-**Check docker state**
-```sudo docker ps```
-**Check all docker state**
-```sudo docker ps -a```
+```sudo systemctl start docker```</br>
+**Check Docker start state**</br>
+```sudo docker run hello-world```</br>
+**Check docker state**</br>
+```sudo docker ps```</br>
+**Check all docker state**</br>
+```sudo docker ps -a```</br>
 
 ### SET UP
 sudo yum install sysv-rc-conf
