@@ -9,9 +9,9 @@ sudo nmap -sTU -O IP-address-Here
 
 ### Check and start Docker
 
-**Start Docker service**
+**Start Docker service**</br>
 ```sudo systemctl start docker```
-**Check Docker start state**
+**Check Docker start state**<\br>
 ```sudo docker run hello-world```
 **Check docker state**
 ```sudo docker ps```
