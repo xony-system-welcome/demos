@@ -3,7 +3,7 @@ https://hevodata.com/learn/docker-postgresql/
 https://medium.com/quick-code/how-to-run-postgresql-and-pgadmin-using-docker-90638fde8bf
 
 ##### Connect to postgresql on centos
-https://blog.csdn.net/weixin_43849277/article/details/108931684
+[https://blog.csdn.net/weixin_43849277/article/details/108931684](https://stackoverflow.com/questions/37694987/connecting-to-postgresql-in-a-docker-container-from-outside)
 
 ##### Take the Docker PostgreSQL image. Open a new command window, and run the command given below.
 ```
