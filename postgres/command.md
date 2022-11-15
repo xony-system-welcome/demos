@@ -7,6 +7,7 @@ https://medium.com/quick-code/how-to-run-postgresql-and-pgadmin-using-docker-906
 
 驗證數據庫是否正在運行
 ps -ef | grep postgres
+https://stackoverflow.com/questions/37694987/connecting-to-postgresql-in-a-docker-container-from-outside
 
 ##### Take the Docker PostgreSQL image. Open a new command window, and run the command given below.
 ```
