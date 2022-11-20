@@ -1,0 +1,61 @@
+version: '3.8'
+services:
+  db:
+    container_name: postgres_container
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: postgres_db
+      POSTGRES_USER: postgresadmin
+      POSTGRES_PASSWORD: postgresLogin
+      PGDATA: /var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+  pgadmin:
+    container_name: pgadmin_container
+    image: dpage/pgadmin4:6.16
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: pgadminadmin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: pgadminLogin
+      PGADMIN_LISTEN_PORT: 80
+    ports:
+      - "8084:80"
+    volumes:
+      - pgadmin-data:/var/lib/pgadmin
+
+  apache:
+    container_name: apache_container
+    image: httpd:latest
+    ports:
+      - "8085:80"
+    volumes:
+      - /home/user/website:/usr/local/apache2/htdocs
+
+  shellinabox:
+    container_name: shellinabox_container
+    image: fhuegli/shellinabox:latest
+    environment:
+      - SIAB_USER=shellinaboxadmin
+      - SIAB_PASSWORD=shellinaboxLogin
+      - SIAB_SSL=false
+      - SIAB_PKGS=
+      - SIAB_SERVICE=/:LOGIN
+    ports:
+      - "4200:4200"
+
+  webssh:
+    container_name: webssh_container
+    image: dbcawa/webssh
+    container_name: webssh_container
+    restart: always
+    privileged: true
+    ports:
+      - "9008:8888"
+
+volumes:
+ db-data:
+ pgadmin-data:
